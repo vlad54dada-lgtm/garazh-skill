@@ -1,0 +1,6 @@
+.env
+node_modules/
+out/
+episodes/*/cache/
+episodes/*/music/*.mp3
+.DS_Store

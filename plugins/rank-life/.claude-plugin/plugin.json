@@ -1,0 +1,8 @@
+{
+  "name": "rank-life",
+  "description": "«Твоя жизнь на каждом ранге…»: long-form 16:9 narrated history explainers — rank ladder, level map, chapter cards, AI graphic-novel stills with Ken Burns motion, narrator TTS and subtitles, built with ffmpeg",
+  "author": { "name": "vlad54dada-lgtm" },
+  "version": "0.1.0",
+  "license": "MIT",
+  "keywords": ["video", "history", "explainer", "narration", "ken-burns", "ai-images", "tts", "skill"]
+}

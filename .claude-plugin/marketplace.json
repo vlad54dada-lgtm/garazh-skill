@@ -1,8 +1,13 @@
 {
-  "name": "garazh-skill",
-  "owner": { "name": "lubluniky" },
-  "description": "Code-rendered vertical cartoon reels in the «garage IT-startup» style for Claude Code",
+  "name": "rank-studio",
+  "owner": { "name": "vlad54dada-lgtm" },
+  "description": "Fork of lubluniky/garazh-skill: code-rendered cartoon reels (garazh) + long-form «твоя жизнь на каждом ранге» history explainers (rank-life)",
   "plugins": [
+    {
+      "name": "rank-life",
+      "source": "./plugins/rank-life",
+      "description": "Long-form 16:9 «Твоя жизнь на каждом ранге…» explainers: script by ranks, AI illustrations (OpenRouter), Ken Burns, level cards, narrator voice, subtitles"
+    },
     {
       "name": "garazh",
       "source": "./plugins/garazh",

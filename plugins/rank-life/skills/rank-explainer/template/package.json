@@ -1,0 +1,10 @@
+{
+  "name": "rank-life-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Long-form narrated history explainers («твоя жизнь на каждом ранге…»): AI illustrations + Ken Burns + narrator, rendered with ffmpeg",
+  "dependencies": {
+    "puppeteer-core": "^23.11.1"
+  }
+}

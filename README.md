@@ -1,3 +1,25 @@
+# rank-studio
+
+Форк [lubluniky/garazh-skill](https://github.com/lubluniky/garazh-skill): маркетплейс плагинов Claude Code с двумя видеостудиями.
+
+| плагин | что делает |
+|---|---|
+| **rank-life** (новый) | Длинные горизонтальные объяснялки «Твоя жизнь на каждом ранге …»: лестница рангов, карта уровней, карточки «Уровень N», иллюстрации нейросетью (OpenRouter, Gemini image) с наездами и панорамами, голос рассказчика (fish-audio через OpenRouter), удары на главах, субтитры .srt. 1920×1080, от минуты до 25. |
+| **garazh** (оригинал) | Вертикальные мультяшные рилсы 720×1280 в стиле «гаражный IT-стартап», нарисованные кодом (SVG → Chrome → ffmpeg). |
+
+## Установка
+```bash
+claude plugin marketplace add vlad54dada-lgtm/garazh-skill
+claude plugin install rank-life@rank-studio
+```
+Потом в Claude Code: «сделай ролик „твоя жизнь на каждом ранге …“ про …». Нужны node ≥ 18, ffmpeg, Google Chrome и ключ OpenRouter (`.env` студии, шаблон — `.env.example`).
+
+Пилотный эпизод — `plugins/rank-life/skills/rank-explainer/template/episodes/rome/episode.mjs` («римский легион», уровни 1–3 из 9).
+
+---
+
+*Ниже — оригинальный README апстрима (плагин garazh). В этом форке garazh ставится как `garazh@rank-studio`.*
+
 # garazh — cartoon reels from your own story, with Claude Code
 
 A Claude Code skill + a small rendering engine that turns a one-line idea into a **vertical cartoon reel** (720×1280, 30 fps, 8–90 s) in a deadpan «garage IT-startup» style: flat 2D with thick brown outlines, warm film grain, karaoke subtitles, name badges with joke job titles, a Claude chat on a laptop screen, procedural foley and optional TTS voice-over.
